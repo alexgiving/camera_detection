@@ -148,9 +148,11 @@ def show_webcam(MIRROR=False, VIDEO_PATH=0, SHOW_FPS=False, STREAMING=False, RES
 
 
 FRAME_PRED = 10                     # FPS of Prediction pipeline
-TOLERANCE = 0.4                     # Predictors confidence of class
+TOLERANCE = 0.9                     # Predictors confidence of class
 PATH = "include/model_4.pt"         # Path to predictor model
+VIDEO_PATH = "data/IMG_5367.MOV"
+ASAF = "data/asaf.MOV"
 
 
-show_webcam(VIDEO_PATH="data/IMG_5367.MOV",
+show_webcam(VIDEO_PATH=ASAF,
             MIRROR=False, SHOW_FPS=True, STREAMING=True)
